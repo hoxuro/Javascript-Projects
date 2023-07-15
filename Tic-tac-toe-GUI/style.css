@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #3b82f6;
+  font-family: "Rubik", sans-serif;
+}
+
+/* SELECCION DE FICHA */
+.choose-box {
+  width: 50rem;
+  position: absolute;
+  background-color: #eff6ff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  box-shadow: 3px 3px 10px #172554;
+  padding: 2rem 0;
+  /* display: none; */
+}
+
+.heading-choose {
+  font-size: 3rem;
+  border-bottom: 2px solid #bfdbfe;
+  padding: 1rem;
+}
+
+.text-choose {
+  font-size: 2.6rem;
+  padding: 1rem;
+}
+
+.btn-choose-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.btn {
+  font-family: inherit;
+  border: none;
+  background-color: inherit;
+  font-size: 2.6rem;
+  background-color: #3b82f6;
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+  color: #eff6ff;
+  box-shadow: 1px 1px 3px #172554;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+}
+
+/* JUEGO PRINCIPAL */
+.tablero {
+  background-color: #eff6ff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px #172554;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col:nth-child(n + 2) {
+  border-left: 4px solid #172554;
+}
+
+.casilla {
+  font-family: inherit;
+  text-align: center;
+  font-size: 6.2rem;
+  width: 15rem;
+  height: 15rem;
+  background-color: inherit;
+  border: none;
+  padding: 3rem;
+  cursor: pointer;
+  color: #172554;
+}
+
+.casilla:nth-child(n + 2) {
+  border-top: 4px solid #172554;
+}
+
+.last-move {
+  color: red;
+}
+
+/* REPLAY */
+.replay-box {
+  background-color: #eff6ff;
+  width: 60rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 3px 3px 10px #172554;
+}
+
+.final-message {
+  font-size: 3rem;
+}
+
+.btn-replay {
+  width: 10rem;
+  height: 5rem;
+  font-size: 2.4rem;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 10px;
+  color: #eff6ff;
+  box-shadow: 2px 2px 5px #172554;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-replay:hover {
+  background-color: #2563eb;
+}
+
+.hidden {
+  display: none;
+}
