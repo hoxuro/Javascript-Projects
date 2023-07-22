@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #eff6ff;
+  color: #262626;
+  height: 100vh;
+}
+
+nav {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-login {
+  font-size: 2.6rem;
+}
+
+.login {
+  display: flex;
+}
+
+.login__input {
+  font-size: 2rem;
+  width: 15rem;
+  height: 3rem;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.login__input:focus {
+  outline: none;
+  border: 1px solid #737373;
+}
+
+.login__input::placeholder {
+  color: #d4d4d4;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+}
+
+.login__btn {
+  font-size: 2.6rem;
+}
+
+.main {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  opacity: 0;
+  transition: all 1s;
+}
+
+/* <!-- BALANCE--> */
+.current-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-current {
+  font-size: 4.5rem;
+}
+
+.text-current {
+  font-size: 2.2rem;
+  color: #262626;
+  margin-bottom: 0.5rem;
+}
+
+.date-current {
+  font-size: 1.4rem;
+  color: #737373;
+}
+
+/* <!-- MOVEMENTS --> */
+.section-operations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movements {
+  height: 65vh;
+  background-color: #fafafa;
+  width: 50%;
+  overflow-y: scroll;
+}
+
+.movement {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.movement div {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  color: #eff6ff;
+  font-size: 1.4rem;
+}
+
+.deposit {
+  background-image: linear-gradient(
+    to left top,
+    #22c55e,
+    #59d15d,
+    #7edc5e,
+    #9fe760,
+    #bef264
+  );
+}
+
+.withdrawal {
+  background-color: #ef4444;
+}
+
+.date {
+  font-size: 1.2rem;
+}
+
+.amount {
+  font-size: 2rem;
+}
+
+/* OPERATIONS */
+
+.operations {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.4rem 1rem;
+}
+
+.form__label {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.form__loan {
+  grid-template-columns: 2.5fr 0.5fr;
+}
+
+.input-op-loan {
+  width: 50%;
+}
+
+.form__label-loan {
+  width: 50%;
+}
+
+.ope-box {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 12px;
+}
+
+.transfer {
+  background-image: linear-gradient(
+    to left top,
+    #f59e0b,
+    #f7ac1f,
+    #f9b92f,
+    #fac63e,
+    #fcd34d
+  );
+}
+
+.request {
+  background-image: linear-gradient(
+    to left top,
+    #16a34a,
+    #26b157,
+    #33c065,
+    #3fcf72,
+    #4ade80
+  );
+}
+
+.close-box {
+  background-image: linear-gradient(
+    to left top,
+    #dc2626,
+    #e43c3a,
+    #ec4f4c,
+    #f2605f,
+    #f87171
+  );
+}
+
+.title-op {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.input-op {
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #eff6ff52;
+  border: none;
+  padding: 1rem;
+  font-family: inherit;
+  transition: all 0.6s;
+}
+
+.input-op:focus {
+  outline: none;
+  background-color: #eff6ffc4;
+}
+
+.btn__ope {
+  text-align: center;
+  font-size: 1.8rem;
+  width: 6rem;
+  height: 3rem;
+  background-color: #eff6ff;
+  border-radius: 12px;
+}
+
+/* SUMMARY */
+
+.section-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-summary {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sum {
+  font-size: 1.2rem;
+}
+
+.in,
+.out,
+.interest {
+  font-size: 2.2rem;
+  margin-left: 0.5rem;
+}
+
+.in,
+.interest {
+  color: #22c55e;
+}
+
+.out {
+  color: #ef4444;
+}
+
+.text-logout {
+  font-size: 1.25rem;
+}
+
+.text-logout span {
+  font-weight: 500;
+}
