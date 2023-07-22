@@ -137,8 +137,6 @@ const readAccountMovs = function (account, sort = false) {
 
   movementsEl.innerHTML = "";
 
-  console.log(movements);
-
   movements.forEach(function (mov, i) {
     movementsEl.insertAdjacentHTML(
       "afterbegin",
