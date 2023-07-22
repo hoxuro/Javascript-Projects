@@ -231,17 +231,22 @@ btnCloseEl.addEventListener("click", function (e) {
   const user = inputUserClose.value;
   const pin = Number(inputPinClose.value);
 
-  accounts.forEach(function (acc) {
-    if (
-      acc.name === user &&
-      acc.pin === pin &&
-      currentUser.name === user &&
-      currentUser.pin === pin
-    ) {
-      accounts.pop(acc);
-      setDefault();
-    }
-  });
+  const closeAcc = accounts.find((acc) => acc.name === user);
+
+  if (closeAcc?.pin === pin) {
+    accounts.splice(closeAcc, 1);
+    setDefault();
+  }
+
+  // accounts.forEach(function (acc) {
+  //   if (
+  //     acc.name === user &&
+  //     acc.pin === pin &&
+  //     currentUser.name === user &&
+  //     currentUser.pin === pin
+  //   ) {
+  //   }
+  // });
 });
 
 btnOpeLoanEl.addEventListener("click", function (e) {
